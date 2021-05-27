@@ -221,7 +221,7 @@ class Configuration
 	 *
      * @var boolean $smtp_auth
      */
-	public static $smtp_auth = true;
+	public static $smtp_auth = false;
 
 	/**
      * Dominio o IP del servidor SMTP.
@@ -230,7 +230,7 @@ class Configuration
 	 *
      * @var string $smtp_host
      */
-	public static $smtp_host = 'mail.bypalomaceballos.com';
+	public static $smtp_host = '';
 
 	/**
      * Usuario de la cuenta smtp.
@@ -240,7 +240,7 @@ class Configuration
 	 *
      * @var string $smtp_user
      */
-	public static $smtp_user = 'noreply@bypalomaceballos.com';
+	public static $smtp_user = '';
 
 	/**
      * Contraseña de la cuenta smtp.
@@ -249,7 +249,7 @@ class Configuration
 	 *
      * @var string $smtp_pass
      */
-	public static $smtp_pass = '1e2X~9xv';
+	public static $smtp_pass = '';
 
 	/**
      * Seguridad de la encriptacion para el envio de SMTP.
@@ -259,7 +259,7 @@ class Configuration
 	 *
      * @var string $smtp_secure
      */
-	public static $smtp_secure = 'tls';
+	public static $smtp_secure = 'ssl';
 
 	/**
      * Puerto de conexion al servidor SMTP.
@@ -268,5 +268,5 @@ class Configuration
 	 *
      * @var integer $smtp_port
      */
-	public static $smtp_port = 587;
+	public static $smtp_port = 465;
 }
